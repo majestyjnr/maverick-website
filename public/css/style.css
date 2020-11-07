@@ -1,12 +1,5 @@
 /*************------------------------------
 
- * Theme Name: Bizler - HTML Responsive Multipurpose Business Template
- * Author: Companyname;
- * Description: A Bootstrap-4 Responsive Multipurpose Business Template
- * Version: 1.1
- * Bootstrap v4.0 (http://getbootstrap.com)
- * Copyright 2018.
-
 ------------------------------*************/
 
 /*************------------------------------
@@ -78,6 +71,10 @@
 /****---- Google Font ----****/
  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Poppins:300,400,500,600,700');
 /****---- Default CSS ----****/
+/* 529e19 */
+.nav-link:hover{
+    color: #529e19;
+}
  html, body {
      background: #fff;
      color: #fff;
@@ -248,6 +245,25 @@
      width:10px;
      transition: all 0.3s ease;
      margin:0px;
+}
+.btn-rounded {
+	border-radius: 30px;
+}
+.btn-dark {
+	background-color: #343a40;
+	color: #FFF;
+}
+.btn-dark:hover {
+	background-color: #23272b;
+	color: #FFF;
+}
+.btn-outline-dark {
+	border: solid 1px #343a40;
+}
+.btn-outline-dark:hover {
+	border: solid 1px #343a40;
+	background: #343a40;
+	color: #FFF;
 }
  .owl-main {
      position: relative;
@@ -606,6 +622,7 @@
      font-family: 'Poppins', sans-serif;
      font-weight:500 !important;
 }
+
  header.sticky {
      position: fixed;
      -webkit-box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.25);

@@ -122,13 +122,15 @@
                     <div class="row">
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 posts">
                             <% if(podcast){ %>
-                                <% podcast = podcast.reverse() %>
+                            <% podcast = podcast.reverse() %>
                             <% podcast.forEach(function(eachPodcast){ %>
                             <div class="item blog_card card_mr_bt d-flex">
                                 <div class="post-img"> <img src="assets/podcast/images/<%= eachPodcast.podcastImage %>"
                                         alt="Post" /> </div>
                                 <div class="post-detail">
-                                    <h5><a href="/podcast-detail?id=<%= eachPodcast._id %>"><%= eachPodcast.podcastTitle %></a></h5>
+                                    <h5><a
+                                            href="/podcast-detail?id=<%= eachPodcast._id %>"><%= eachPodcast.podcastTitle %></a>
+                                    </h5>
                                     <div class="post-status">
                                         <ul>
                                             <li><i class="flat flaticon-folder"></i> <span><a
@@ -141,7 +143,8 @@
                                     </div>
                                     <div class="description">
                                         <p><%- eachPodcast.podcastDescription.substring(0, 100) + '...' %></p>
-                                        <a href="/podcast-detail?id=<%= eachPodcast._id %>" title="View More">View More</a> 
+                                        <a href="/podcast-detail?id=<%= eachPodcast._id %>" title="View More">View
+                                            More</a>
                                         <!-- <div style="float: right;"> <audio src="assets/podcast/files/<%= eachPodcast.podcastFile %>" controls ></audio></div> -->
                                     </div>
                                 </div>
@@ -186,10 +189,12 @@
                                 </div>
                                 <div class="widget-content">
                                     <% if(podcast){ %>
-                                        <% podcast = podcast.reverse() %>
+                                    <% podcast = podcast.reverse() %>
                                     <% podcast.forEach(function(eachPodcast){ %>
                                     <div class="post-item">
-                                        <div class="post-img"> <img src="assets/podcast/images/<%= eachPodcast.podcastImage %>" alt="post" />
+                                        <div class="post-img"> <img
+                                                src="assets/podcast/images/<%= eachPodcast.podcastImage %>"
+                                                alt="post" />
                                         </div>
                                         <div class="post-content">
                                             <a href="/podcast-detail?id=<%= eachPodcast._id %>"><%= eachPodcast.podcastTitle %>
@@ -288,120 +293,114 @@
         <!-- ====== Blog Posts End ====== -->
     </div>
 
-        <!-- ====== Footer Start ====== -->
-        <footer>
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 column">
-                            <div class="footer_about_content">
-                                <div class="footer_logo"><a href="/" title="Maverick Edifice"><img
-                                            src="img/logo.png" alt="Maverick Edifice" /></a> </div>
-                                <p> Collaborate with Maverick Edifice to share your dreams with a trusted
+    <!-- ====== Footer Start ====== -->
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 column">
+                        <div class="footer_about_content">
+                            <div class="footer_logo"><a href="/" title="Maverick Edifice"><img src="img/logo.png"
+                                        alt="Maverick Edifice" /></a> </div>
+                            <!-- <p> Collaborate with Maverick Edifice to share your dreams with a trusted
                                     partner, who is willing to help you achieve them. we will be thrilled to give you the
                                     best experience ever! That's our promise.</p>
                                 <p>Do Business With Us
-                                </p>
-                            </div>
+                                </p> -->
                         </div>
-                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
-                            <h5>Navigation</h5>
-                            <div class="navigations">
-                                <ul>
-                                    <li><a href="/" title="Home"> Home</a></li>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
+                        <h5>Useful Links</h5>
+                        <div class="navigations">
+                            <ul>
+                                <li><a href="/careers" title="Careers"> Careers</a></li>
+                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
+                                <!-- <li><a href="/" title="Home"> Home</a></li>
                                     <li><a href="/blog" title="Blog"> Blog</a></li>
                                     <li><a href="/podcast" title="Blog"> Podcast</a></li>
                                     <li><a href="/products" title="Products"> Products</a></li>
                                     <li><a href="/services" title="Services"> Services</a></li>
-                                    <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 column">
-                            <h5>Useful Links</h5>
-                            <div class="navigations">
-                                <ul>
-                                    <li><a href="/our-team" title="Out Team"> Our Team</a></li>
-                                    <li><a href="/careers" title="Careers"> Careers</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 column">
-                            <h5>Contact Info</h5>
-                            <div class="contact_info">
-                                <ul>
-                                    <li> <i class="flat flaticon-facebook-placeholder-for-locate-places-on-maps"></i>Accra,
-                                        Ghana </li>
-                                    <li> <i class="flat flaticon-phone-receiver"></i>+233 55 968 7893, +233 55 337 1974</li>
-                                    <li> <i class="flat flaticon-mail-black-envelope-symbol"></i>info@maverickedifice.com
-                                    </li>
-                                </ul>
-                            </div>
+                                    <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li> -->
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="newsletter">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <h4>Our Newsletter</h4>
-                            </div>
-                            <div class="col-md-9">
-                                <form onsubmit="return subscribe(this)" method="POST">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <input type="text" id="name" name="name" placeholder="Name" required/>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input type="email" id="email" name="email" placeholder="Email" required/>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <button type="Submit">Subscribe</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <script>
-                                function subscribe(form) {
-                                    var formData = { name: form.name.value, email: form.email.value }
-                                    $.ajax({
-                                        url: '/subscribe',
-                                        method: 'POST',
-                                        data: formData,
-                                        success: function (response) {
-                                            document.getElementById('name').value = "";
-                                            document.getElementById('email').value = "";
-                                            var notify = new Audio("sounds/notify.mp3");
-                                            notify.play();
-                                            iziToast.success({ title: 'Success!', message: response.text, position: 'bottomRight' })
-                                        }
-    
-                                    });
-                                    return false;
-                                }
-                            </script>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 column">
+                        <div class="navigations">
+                            <ul>
+
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="copyright col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> Copyright &copy;
-                            <script> document.write(new Date().getFullYear());</script>
-                            <span class="separator-pipesign"></span>
-                            All Rights Reserved
-                            <span class="separator-pipesign"></span>
-                            <a href="/">Maverick Edifice</a></div>
-                        <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="/policy/privacy">Privacy
-                                Policy</a>
-                            <span class="separator-pipesign"></span>
-                            <a href="/policy/terms">Terms &amp; Conditions</a>
-                            <span class="separator-pipesign"></span>
-                            <a href="/faq">FAQ's</a> </div> -->
+                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 column">
+                        <h5>Contact Info</h5>
+                        <div class="contact_info">
+                            <ul>
+                                <li> <i class="flat flaticon-facebook-placeholder-for-locate-places-on-maps"></i>Accra,
+                                    Ghana </li>
+                                <li> <i class="flat flaticon-phone-receiver"></i>+233 55 968 7893, +233 55 337 1974</li>
+                                <li> <i class="flat flaticon-mail-black-envelope-symbol"></i>info@maverickedifice.com
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- ====== Footer End ====== -->
+            <div class="col-lg-12">
+                <div class="newsletter">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Our Newsletter</h4>
+                        </div>
+                        <div class="col-md-9">
+                            <form onsubmit="return subscribe(this)" method="POST">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="name" name="name" placeholder="Name" required />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="email" id="email" name="email" placeholder="Email" required />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="Submit">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            function subscribe(form) {
+                                var formData = { name: form.name.value, email: form.email.value }
+                                $.ajax({
+                                    url: '/subscribe',
+                                    method: 'POST',
+                                    data: formData,
+                                    success: function (response) {
+                                        document.getElementById('name').value = "";
+                                        document.getElementById('email').value = "";
+                                        var notify = new Audio("sounds/notify.mp3");
+                                        notify.play();
+                                        iziToast.success({ title: 'Success!', message: response.text, position: 'bottomRight' })
+                                    }
+
+                                });
+                                return false;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> Copyright &copy;
+                        <script> document.write(new Date().getFullYear());</script>
+                        <span class="separator-pipesign"></span>
+                        All Rights Reserved
+                        <span class="separator-pipesign"></span>
+                        <a href="/">Maverick Edifice</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
 
     <!-- popper js-->
     <script src="js/popper.min.js"></script>

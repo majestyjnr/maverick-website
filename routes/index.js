@@ -133,7 +133,11 @@ router.post("/send-message", function (req, res) {
 
 // ============================ Middle Section ========================
 router.get("/Who", function (req, res) {
-  res.render("middle/who");
+  TeamMember.find(function (err, teamMembers) {
+  res.render("middle/who", {
+    team: teamMembers,
+  });
+  });
 });
 
 router.get("/What", function (req, res) {
@@ -144,8 +148,8 @@ router.get("/Why", function (req, res) {
   res.render("middle/why");
 });
 
-router.get("/Values", function (req, res) {
-  res.render("middle/values");
+router.get("/How", function (req, res) {
+  res.render("middle/how");
 });
 
 router.get("/Work-culture", function (req, res) {

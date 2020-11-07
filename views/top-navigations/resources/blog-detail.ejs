@@ -60,8 +60,8 @@
                 <nav class="navbar navbar-expand-lg">
                     <!-- Brand -->
                     <h2 class="nav-brand">
-                        <a class="navbar-brand" href="/" title="Maverick Edifice"><img width="200px"
-                                src="img/logo.png" alt="Maverick Edifice" /></a>
+                        <a class="navbar-brand" href="/" title="Maverick Edifice"><img width="200px" src="img/logo.png"
+                                alt="Maverick Edifice" /></a>
                     </h2>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
@@ -179,7 +179,8 @@
                                         alt="Author" /> </div>
                                 <div class="about-author">
                                     <div class="name_designation">
-                                        <p>Posted By: </p><h6><%= admin.adminName %></h6>
+                                        <p>Posted By: </p>
+                                        <h6><%= admin.adminName %></h6>
                                     </div>
                                     <!-- <div class="social_media">
                                         <ul>
@@ -354,8 +355,7 @@
                                     <% allBlogs = allBlogs.reverse() %>
                                     <% allBlogs.forEach(function(eachPodcast){ %>
                                     <div class="post-item">
-                                        <div class="post-img"> <img
-                                                src="assets/blog/<%= eachPodcast.blogImage %>"
+                                        <div class="post-img"> <img src="assets/blog/<%= eachPodcast.blogImage %>"
                                                 alt="post" />
                                         </div>
                                         <div class="post-content">
@@ -459,34 +459,34 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12 column">
                         <div class="footer_about_content">
-                            <div class="footer_logo"><a href="/" title="Maverick Edifice"><img
-                                        src="img/logo.png" alt="Maverick Edifice" /></a> </div>
-                            <p> Collaborate with Maverick Edifice to share your dreams with a trusted
+                            <div class="footer_logo"><a href="/" title="Maverick Edifice"><img src="img/logo.png"
+                                        alt="Maverick Edifice" /></a> </div>
+                            <!-- <p> Collaborate with Maverick Edifice to share your dreams with a trusted
                                 partner, who is willing to help you achieve them. we will be thrilled to give you the
                                 best experience ever! That's our promise.</p>
                             <p>Do Business With Us
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
-                        <h5>Navigation</h5>
+                        <h5>Useful Links</h5>
                         <div class="navigations">
                             <ul>
-                                <li><a href="/" title="Home"> Home</a></li>
+                                <li><a href="/careers" title="Careers"> Careers</a></li>
+                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
+                                <!-- <li><a href="/" title="Home"> Home</a></li>
                                 <li><a href="/blog" title="Blog"> Blog</a></li>
-                                <li><a href="/blog" title="Blog"> Podcast</a></li>
+                                <li><a href="/podcast" title="Blog"> Podcast</a></li>
                                 <li><a href="/products" title="Products"> Products</a></li>
                                 <li><a href="/services" title="Services"> Services</a></li>
-                                <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li>
+                                <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li> -->
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 column">
-                        <h5>Useful Links</h5>
                         <div class="navigations">
                             <ul>
-                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
-                                <li><a href="/careers" title="Careers"> Careers</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -514,10 +514,10 @@
                             <form onsubmit="return subscribe(this)" method="POST">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="text" id="name" name="name" placeholder="Name" required/>
+                                        <input type="text" id="name" name="name" placeholder="Name" required />
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="email" id="email" name="email" placeholder="Email" required/>
+                                        <input type="email" id="email" name="email" placeholder="Email" required />
                                     </div>
                                     <div class="col-md-4">
                                         <button type="Submit">Subscribe</button>
@@ -555,18 +555,12 @@
                         All Rights Reserved
                         <span class="separator-pipesign"></span>
                         <a href="/">Maverick Edifice</a></div>
-                    <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="/policy/privacy">Privacy
-                            Policy</a>
-                        <span class="separator-pipesign"></span>
-                        <a href="/policy/terms">Terms &amp; Conditions</a>
-                        <span class="separator-pipesign"></span>
-                        <a href="/faq">FAQ's</a> </div> -->
                 </div>
             </div>
         </div>
     </footer>
     <!-- ====== Footer End ====== -->
-    
+
     <!-- popper js-->
     <script src="js/popper.min.js"></script>
     <!-- bootstrap js-->

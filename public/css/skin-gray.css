@@ -9,8 +9,14 @@
  form .form-group button[type="submit"]{
      background: #595959;
 }
+/* 529e19 */
  .navbar-nav .nav-item.active a{
-     color:#595959;
+     color:yellowgreen;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+.navbar-nav .nav-item a:hover{
+     border-bottom: yellowgreen 3px solid ;
 }
  .navbar-nav .nav-item.active a.dropdown-toggle::after{
      color:#595959;

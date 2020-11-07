@@ -132,41 +132,41 @@
                             </div>
                         </div>
                         <% if(member){ %>
-                            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                                <div class="about_member">
-                                    <div class="name_designation">
-                                        <h3><%= member.memberName %></h3>
-                                        <h6><%= member.memberPosition %></h6>
-                                    </div>
-                                    <div class="social_media">
-                                        <ul>
-                                            <li><a href="javascript:void(0)" title="Facebook"><i
-                                                        class="flat flaticon-facebook-logo"></i></a></li>
-                                            <li><a href="javascript:void(0)" title="Twitter"><i
-                                                        class="flat flaticon-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0)" title="Google"><i
-                                                        class="flat flaticon-google-plus-logo"></i></a></li>
-                                            <li><a href="javascript:void(0)" title="Linkedin"><i
-                                                        class="flat flaticon-linkedin-logo"></i></a></li>
-                                            <li><a href="javascript:void(0)" title="Instagram"><i
-                                                        class="flat flaticon-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="description">
-                                        <p><%- member.memberDescription %>
-                                    </div>
+                        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                            <div class="about_member">
+                                <div class="name_designation">
+                                    <h3><%= member.memberName %></h3>
+                                    <h6><%= member.memberPosition %></h6>
                                 </div>
-                                <div class="contact-detail">
+                                <div class="social_media">
                                     <ul>
-                                        <li> <i class="flat flaticon-phone-receiver"></i> <%= member.memberTelephone %></li>
-                                        <!-- <li> <i class="flat flaticon-earth"></i> www.maverickedifice.com </li> -->
-                                        <li> <i
-                                                class="flat flaticon-mail-black-envelope-symbol"></i><%= member.memberEmail %>
-                                        </li>
+                                        <li><a href="javascript:void(0)" title="Facebook"><i
+                                                    class="flat flaticon-facebook-logo"></i></a></li>
+                                        <li><a href="javascript:void(0)" title="Twitter"><i
+                                                    class="flat flaticon-twitter"></i></a></li>
+                                        <li><a href="javascript:void(0)" title="Google"><i
+                                                    class="flat flaticon-google-plus-logo"></i></a></li>
+                                        <li><a href="javascript:void(0)" title="Linkedin"><i
+                                                    class="flat flaticon-linkedin-logo"></i></a></li>
+                                        <li><a href="javascript:void(0)" title="Instagram"><i
+                                                    class="flat flaticon-instagram"></i></a></li>
                                     </ul>
                                 </div>
+                                <div class="clearfix"></div>
+                                <div class="description">
+                                    <p><%- member.memberDescription %>
+                                </div>
                             </div>
+                            <div class="contact-detail">
+                                <ul>
+                                    <li> <i class="flat flaticon-phone-receiver"></i> <%= member.memberTelephone %></li>
+                                    <!-- <li> <i class="flat flaticon-earth"></i> www.maverickedifice.com </li> -->
+                                    <li> <i
+                                            class="flat flaticon-mail-black-envelope-symbol"></i><%= member.memberEmail %>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <% } %>
                     </div>
                 </div>
@@ -178,8 +178,11 @@
                             <div class="v1" style="margin-left: 50%;"></div>
                         </center>
                         <% if(partner != null) { %>
-                            <img src="assets/team/<%= partner.memberImage %>" onclick="window.location.href='/team-member-detail?id=<%= partner._id %>'" alt="Image" style="width: 200px; cursor: pointer; border-radius: 50%; margin-top: 30px; margin-bottom: 20px;">
-                            <h2><a href="/team-member-detail?id=<%= partner._id %>"  style="color: rgb(71, 71, 71);"> <%= partner.memberName %></a></h2>
+                        <img src="assets/team/<%= partner.memberImage %>"
+                            onclick="window.location.href='/team-member-detail?id=<%= partner._id %>'" alt="Image"
+                            style="width: 200px; cursor: pointer; border-radius: 50%; margin-top: 30px; margin-bottom: 20px;">
+                        <h2><a href="/team-member-detail?id=<%= partner._id %>" style="color: rgb(71, 71, 71);">
+                                <%= partner.memberName %></a></h2>
                         <%   }   %>
                     </div>
                 </div>
@@ -223,33 +226,32 @@
                         <div class="footer_about_content">
                             <div class="footer_logo"><a href="/" title="Maverick Edifice"><img src="img/logo.png"
                                         alt="Maverick Edifice" /></a> </div>
-                            <p> Collaborate with Maverick Edifice to share your dreams with a trusted
+                            <!-- <p> Collaborate with Maverick Edifice to share your dreams with a trusted
                                 partner, who is willing to help you achieve them. we will be thrilled to give you the
                                 best experience ever! That's our promise.</p>
                             <p>Do Business With Us
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
-                        <h5>Navigation</h5>
+                        <h5>Useful Links</h5>
                         <div class="navigations">
                             <ul>
-                                <li><a href="/" title="Home"> Home</a></li>
-                                <li><a href="/services" title="Services"> Services</a></li>
+                                <li><a href="/careers" title="Careers"> Careers</a></li>
+                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
+                                <!-- <li><a href="/" title="Home"> Home</a></li>
                                 <li><a href="/blog" title="Blog"> Blog</a></li>
+                                <li><a href="/podcast" title="Blog"> Podcast</a></li>
                                 <li><a href="/products" title="Products"> Products</a></li>
-                                <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li>
+                                <li><a href="/services" title="Services"> Services</a></li>
+                                <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li> -->
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 column">
-                        <h5>Useful Links</h5>
                         <div class="navigations">
                             <ul>
-                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
-                                <li><a href="/careers" title="Careers"> Careers</a></li>
-                                <li><a href="/policy/privacy" title="Privacy Policy"> Privacy Policy</a></li>
-                                <li><a href="/faq" title="FAQ's"> FAQ's</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -263,12 +265,6 @@
                                 <li> <i class="flat flaticon-mail-black-envelope-symbol"></i>info@maverickedifice.com
                                 </li>
                             </ul>
-                            <div class="follow_us_on"> <a href="javascript:void(0)"><i
-                                        class="flat flaticon-facebook-logo"></i></a> <a href="javascript:void(0)"><i
-                                        class="flat flaticon-twitter"></i></a> <a href="javascript:void(0)"><i
-                                        class="flat flaticon-google-plus-logo"></i></a> <a href="javascript:void(0)"><i
-                                        class="flat flaticon-linkedin-logo"></i></a> <a href="javascript:void(0)"><i
-                                        class="flat flaticon-instagram"></i></a> </div>
                         </div>
                     </div>
                 </div>
@@ -283,10 +279,10 @@
                             <form onsubmit="return subscribe(this)" method="POST">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="text" id="name" name="name" placeholder="Name" required/>
+                                        <input type="text" id="name" name="name" placeholder="Name" required />
                                     </div>
                                     <div class="col-md-4">
-                                        <input type="email" id="email" name="email" placeholder="Email" required/>
+                                        <input type="email" id="email" name="email" placeholder="Email" required />
                                     </div>
                                     <div class="col-md-4">
                                         <button type="Submit">Subscribe</button>
@@ -354,8 +350,8 @@
     <script src="js/jquery.smartmenus.min.js"></script>
     <!-- Custome js-->
     <script src="js/custom.js"></script>
-      <!-- IZITOAST -->
-      <script src="css/izitoast/js/iziToast.min.js"></script>
+    <!-- IZITOAST -->
+    <script src="css/izitoast/js/iziToast.min.js"></script>
 </body>
 
 </html>
