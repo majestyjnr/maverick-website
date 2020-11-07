@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Maverick Edifice - Add Team Member</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favi.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+
+    <!-- Feathericon CSS -->
+    <link rel="stylesheet" href="../../assets/css/feathericon.min.css">
+
+    <link rel="stylesheet" href="../../assets/plugins/morris/morris.css">
+
+    <link rel="stylesheet" href="../../assets/plugins/summernote/summernote-bs4.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- IZITOAST Libraries -->
+    <link rel="stylesheet" href="../../css/izitoast/css/iziToast.min.css">
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="/maverick-admin/dashboard" class="logo">
+                    <img src="../../assets/img/logo.png" alt="Logo">
+                </a>
+                <a href="/maverick-admin/dashboard" class="logo logo-small">
+                    <img src="../../assets/img/logo-small.png" alt="Logo" width="30" height="30">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a href="javascript:void(0);" id="toggle_btn">
+                <i class="fe fe-text-align-left"></i>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <a class="mobile_btn" id="mobile_btn">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- /Mobile Menu Toggle -->
+
+            <!-- Header Right Menu -->
+            <ul class="nav user-menu">
+
+                <!-- Notifications -->
+                <li class="nav-item dropdown noti-dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="fe fe-bell"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media">
+                                            <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="../../assets/img/doctors/doctor-thumb-01.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Dr. Ruby Perrin</span>
+                                                    Schedule <span class="noti-title">her appointment</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media">
+                                            <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="../../assets/img/patients/patient1.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Charlene Reed</span>
+                                                    has booked her appointment to <span class="noti-title">Dr. Ruby
+                                                        Perrin</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media">
+                                            <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="../../assets/img/patients/patient2.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Travis Trimble</span>
+                                                    sent a amount of $210 for his <span
+                                                        class="noti-title">appointment</span></p>
+                                                <p class="noti-time"><span class="notification-time">8 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="#">
+                                        <div class="media">
+                                            <span class="avatar avatar-sm">
+                                                <img class="avatar-img rounded-circle" alt="User Image"
+                                                    src="../../assets/img/patients/patient3.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Carl Kelly</span> send
+                                                    a message <span class="noti-title"> to his doctor</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="#">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+
+                <!-- User Menu -->
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <span class="user-img">
+                            <% if(admin_image != ''){ %>
+                            <img class="rounded-circle" src="../../assets/team/admin/<%= admin_image %>" width="31"
+                                alt="Username">
+                            <% } %>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="user-header">
+                            <div class="avatar avatar-sm">
+                                <% if(admin_image != ''){ %>
+                                <img src="../../assets/team/admin/<%= admin_image %>" alt="User Image"
+                                    class="avatar-img rounded-circle">
+                                <% } %>
+                            </div>
+                            <div class="user-text">
+                                <h6><%= admin_name %></h6>
+                                <p class="text-muted mb-0">Administrator</p>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="/maverick-admin/profile">My Profile</a>
+                        <a class="dropdown-item" href="/maverick-admin/logout">Logout</a>
+                    </div>
+                </li>
+                <!-- /User Menu -->
+
+            </ul>
+            <!-- /Header Right Menu -->
+
+        </div>
+        <!-- /Header -->
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main</span>
+                        </li>
+                        <li>
+                            <a href="/maverick-admin/dashboard"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="/maverick-admin/add-new/admin"><i class="fe fe-user-plus"></i> <span>Add New
+                                    Admin</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="/maverick-admin/add-new/team-member"><i class="fe fe-user-plus"></i> <span>Add Team
+                                    Member</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-upload"></i> <span> Uploads</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="/maverick-admin/add-new/post"><i class="fe fe-layout"></i>
+                                        Add New Post</a></li>
+                                <li><a href="/maverick-admin/add-new/podcast"><i class="fe fe-file-audio"></i> Add New
+                                        Podcast</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-document"></i> <span> Management</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="/maverick-admin/management/admins"><i class="fe fe-users"></i> Manage
+                                        Admins</a></li>
+                                <li><a href="/maverick-admin/management/team"><i class="fe fe-users"></i> Manage
+                                        Team</a></li>
+                                <li><a href="/maverick-admin/management/blog"><i class="fe fe-layout"></i> Manage
+                                        Blog</a></li>
+                                <li><a href="/maverick-admin/management/podcasts"><i class="fe fe-file-audio"></i>
+                                        Manage Podcast</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/maverick-admin/messages"><i class="fe fe-messanger"></i> <span>
+                                    Messages</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fe fe-document"></i> <span>Subscriptions</span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="/maverick-admin/broadcast-newsletters"><i class="fe fe-users"></i> Send Newsletters</a></li>
+                                <li><a href="/maverick-admin/subscribers"><i class="fe fe-users"></i> Subscribers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Add New team Member</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/maverick-admin/dashboard">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Add New Team Member</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card mb-7" style="margin-bottom: 100px;">
+                            <div class="card-header">
+                                <h4 class="card-title">Maverick Edifice</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="/maverick-admin/add-new/team-member" method="POST"
+                                    enctype="multipart/form-data">
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Member Name</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="memberName" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Position Held</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="memberPosition" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Position Category</label>
+                                        <div class="col-md-10">
+                                            <select name="memberPositionCategory" id="" class="form-control">
+                                                <option value="Adminstration">Adminstration</option>
+                                                <option value="Business Adminstration">Business Adminstration</option>
+                                                <option value="Customer Relations">Customer Relations</option>
+                                                <option value="Software Development">Software Development</option>
+                                                <option value="Other Associates">Other Associates</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Telephone</label>
+                                        <div class="col-md-4">
+                                            <input type="number" name="memberTelephone" class="form-control">
+                                        </div>
+                                        <label class="col-form-label col-md-2">Email</label>
+                                        <div class="col-md-4">
+                                            <input type="email" name="memberEmail" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Member Image</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control" name="memberImage" type="file">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea id="summernote" name="memberDescription"></textarea>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-md-2">Partner</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control" name="memberPartner" type="text">
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary text-left" type="submit"><i class="fa fa-save"></i>
+                                        Save Team Member</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Wrapper -->
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../assets/js/jquery-3.2.1.min.js"></script>
+
+
+    <!-- <script>
+        var notify = new Audio("../../sounds/notify.mp3");
+        notify.play();
+        iziToast.success({ title: 'Success!', message: , position: 'topRight' })
+    </script> -->
+
+
+    <!-- Bootstrap Core JS -->
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="../../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="../../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../../assets/plugins/morris/morris.min.js"></script>
+    <script src="../../assets/js/chart.morris.js"></script>
+    <!-- summernote-bs4 -->
+    <script src="../../assets/plugins/summernote/summernote-bs4.js"></script>
+    <script>
+        $('#summernote').summernote({
+            height: 300, // set editor height
+            placeholder: 'Member Description Goes Here...',
+            minHeight: null, // set minimum height of editor
+            maxHeight: null, // set maximum height of editor
+            focus: false // set focus to editable area after initializing summernote
+        });
+        var edit = function () {
+            $('.click2edit').summernote({ focus: true });
+        };
+
+        var save = function () {
+            var markup = $('.click2edit').summernote('code');
+            $('.click2edit').summernote('destroy');
+        };
+    </script>
+    <!-- Custom JS -->
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- IZITOAST -->
+    <script src="../../css/izitoast/js/iziToast.min.js"></script>
+
+    <% if( error != '') { %>
+    <script>
+        var notify = new Audio("../../sounds/notify.mp3");
+        notify.play();
+        iziToast.error({ title: 'Error!', message: `<%= error %>`, position: 'topRight' })
+    </script>
+    <% } %>
+    <% if(error_msg != '') { %>
+    <script>
+        var notify = new Audio("../../sounds/notify.mp3");
+        notify.play();
+        iziToast.error({ title: 'Info!', message: `<%= error_msg %>`, position: 'topRight' })
+    </script>
+    <% } %>
+    <% if(typeof errors != 'undefined') { %>
+    <%  errors.forEach(function(error) { %>
+    <script>
+        var notify = new Audio("../../sounds/notify.mp3");
+        notify.play();
+        iziToast.error({ title: 'Error Encountered!', message: `<%= error.msg %>`, position: 'topRight' })
+    </script>
+    <%     }); %>
+    <% } %>
+
+    <% if(success_msg != '') { %>
+    <script>
+        var notify = new Audio("../../sounds/notify.mp3");
+        notify.play();
+        iziToast.success({ title: 'Success!', message: `<%= success_msg %>`, position: 'topRight' })
+    </script>
+    <% } %>
+
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+ 
+/*-------------------------------------- Blue color css #2285d9 ----------------------------------------*/
+ h1 span{
+     color:#2285d9;
+}
+ ul,li {
+     list-style: none;
+     padding: 0px;
+     margin: 0px;
+}
+ a, a:hover, a:focus {
+     text-decoration: none;
+     cursor: pointer;
+     outline: none;
+}
+ a.view_more:hover{
+     background: #2285d9;
+}
+ form .form-group button[type="submit"]{
+     background: #2285d9;
+}
+ .header-top.contact_info {
+     background:#2285d9;
+}
+ .navbar-nav .nav-item.active a{
+     color:#2285d9;
+}
+ .navbar-nav .nav-item.active a.dropdown-toggle::after{
+     color:#2285d9;
+}
+ .nav-item.dropdown.active a{
+     color:#2285d9;
+}
+ .dropdown-item a:hover{
+     background-color: #2285d9;
+     color:#fff;
+}
+ .navbar-toggler-icon {
+     display: block;
+     width:25px;
+     height:2px;
+     vertical-align: middle;
+     background-color: #2285d9;
+     margin: 5px 0 
+}
+ .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+     background:#2285d9;
+}
+ section#portfolio .sort-btn.active, section#portfolio .sort-btn:hover{
+     background:#2285d9 !important;
+     border:solid 1px rgba(255, 255, 255, 0.5);
+     padding:8px 24px;
+}
+ section#testimonials .testimonials-slider .item .client_detail .name_designation h5{
+     color:#2285d9;
+}
+ .owl-carousel .owl-nav .owl-next::before {
+     color:#2285d9;
+}
+ .owl-carousel .owl-nav .owl-prev::before {
+     color:#2285d9;
+}
+ .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-next:hover{
+     background:#2285d9 !important;
+     border-color:#2285d9;
+}
+ .section_heading h2 span{
+     color:#2285d9;
+}
+ .separator ul li{
+     background:#2285d9;
+}
+ .separator.left-align ul li{
+     background:#2285d9;
+}
+ .pagination .page-item.active .page-link, .pagination .page-link:hover{
+     background:#2285d9 !important;
+     border-color:#2285d9;
+}
+ .post-detail .post-status ul li i{
+     color: #2285d9;
+}
+ .post-detail .post-status ul li i::before{
+     color: #2285d9;
+}
+ .post-detail .description a{
+     color: #2285d9;
+}
+ .sidebar .widget .widget-content .post-item .post-content .post-status i::before {
+     color: #2285d9;
+}
+ .sidebar .widget .widget-content .tags ul li a:hover{
+     border: solid 1px #2285d9;
+     background:#2285d9;
+}
+ .chat-id p span{
+     font-size: 30px;
+     color:#2285d9;
+}
+ .service-card.item .service_icon i::before{
+     color: #2285d9;
+}
+ section#services .item:hover .service-card {
+     border:#2285d9 !important;
+     background:#2285d9 !important;
+     -webkit-box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+     -moz-box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+     box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+}
+ .team-card.item .name_designation h5{
+     display: block;
+     color:#2285d9;
+     font-weight: 500;
+}
+ .blog_card .post-detail .posted_by a{
+     color:#2285d9;
+     font-weight:bold;
+}
+ footer .footer_about_content a{
+     color: #2285d9;
+}
+ footer .contact_info i{
+     color:#2285d9;
+}
+ footer .newsletter h4{
+     color:#2285d9;
+}
+ footer .newsletter form input[type="submit"]{
+     background:#2285d9;
+}
+ footer .copyright a:hover{
+     color: #2285d9;
+}
+ section#inner-banner .inner-heading .breadcrumb li.breadcrumb-item a {
+     color: #2285d9;
+}
+ section#qualities .column .icon i::before{
+     color: #2285d9;
+}
+ section#about-detail .section_heading h4 span{
+     color: #2285d9;
+}
+ section#pricing .price_amount strong{
+     color: #2285d9;
+}
+ section#pricing .purchase a.purchase_now:hover{
+     background: #2285d9;
+     color: #fff;
+}
+ section#pricing .ultimate{
+     background: #2285d9 !important;
+     -webkit-box-shadow: 0px 5px 32px -7px rgba(34,137,217,0.78);
+     -moz-box-shadow: 0px 5px 32px -7px rgba(34,137,217,0.78);
+     box-shadow: 0px 5px 32px -7px rgba(34,137,217,0.78);
+}
+ section#pricing .ultimate .purchase a.purchase_now{
+     color: #2285d9;
+}
+ section#portfolio_detail .about_project i::before{
+     font-size: 40px;
+     color:#2285d9;
+}
+ section#member .meeting_content a{
+     color:#2285d9;
+}
+ section#team_member_detail .name_designation h3{
+     color:#2285d9;
+}
+ section#team_member_detail .name_designation h6{
+     color:#262626;
+}
+ section#team_member_detail .social_media ul li a:hover{
+     color:#2285d9;
+}
+ section#team_member_detail .contact-detail li i::before{
+     color:#2285d9;
+}
+ section#member .overlay, section#portfolio .overlay, section#counter .overlay, section#services-counter .overlay, section#work-status .overlay{
+     width:100%;
+     height: 100%;
+     background: rgba(34,137,217, 0.8);
+     display:block;
+     position:absolute;
+     z-index:0;
+     top:0;
+}
+ .post-detail h6 a:hover, .post-detail h4 a:hover, .post-detail h5 a:hover{
+     color:#2285d9 !important;
+}
+ section#team_member_detail .counter-column .counter_content .title{
+     color: #2285d9;
+}
+ section#blog-post-list .post-detail .post-status ul li i{
+     color: #2285d9;
+}
+ section#blog-post-list .post-detail .post-status ul li i::before{
+     color: #2285d9;
+}
+ section#blog-post-list .post-detail .description a{
+     color: #2285d9;
+}
+ section#single-post-detail .tags_share .tags ul li a:hover{
+     border: solid 1px #2285d9;
+     background:#2285d9;
+}
+ section#single-post-detail .tags_share .share_on .icons a i:hover::before{
+     color:#2285d9;
+}
+ section#single-post-detail .author_sec .about-author .name_designation h6{
+     color:#2285d9;
+}
+ section#single-post-detail .author_sec .about-author .social_media ul li a:hover{
+     color:#2285d9;
+}
+ section#single-post-detail .comments h5 span{
+     color: #2285d9;
+}
+ section#single-post-detail .comments ol li .visitor_description .date {
+     color:#2285d9;
+}
+ section#single-post-detail .comments ol li .visitor_description a{
+     color:#2285d9;
+}
+ section#single-post-detail .sidebar .widget .widget-content .post-item .post-content .post-status i::before {
+     color: #2285d9;
+}
+ .project .zoom{
+     background: rgba(34,137,217, 0.9);
+}
+ .blog_card .post-img .posted_on {
+     background: rgba(34,137,217, 0.9);
+}
+ section#single-post-detail .blog-detail .post-detail .about-post .special-quote{
+     background:#ffece1;
+     border:solid 1px #f0c9b1;
+}
+ section#contact-us .contact-detail .contact-card .icon i::before{
+     color: #2285d9;
+}
+ section#contact-us .mid-content .description span{
+     color: #2285d9;
+}
+ section#contact-us .info ul li .icon i:before{
+     color:#2285d9;
+}
+ section#contact-us .form-header{
+     background:#2285d9;
+}
+ section#faq #accordion button.btn-link span{
+     color:#2285d9;
+}
+ section#page-not-found .error-content h4 {
+     color:#2285d9;
+}
+ section#page-not-found .error-content a{
+     background: #2285d9;
+}
+ .separator ul li{
+     background:#2285d9;
+}
+ .section_heading h1 span, .section_heading h2 span{
+     color:#2285d9;
+}
+ header .contact_info .mail-call i::before {
+     color:#2285d9;
+     font-size: 16px;
+     margin-right:10px;
+}
+ section#about-us .qualities .column .icon i::before {
+     color:#2285d9;
+}
+ section#services .item:hover .service-card {
+     border:#2285d9;
+     background:#2285d9;
+     -webkit-box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+     -moz-box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+     box-shadow: 0px 15px 32px -14px rgba(34,137,217,1);
+}
+ .team-card .name_designation h5 a{
+     color:#2285d9;
+}
+ section#counter .counter-column .count_icon i::before{
+     color:#2285d9;
+}
+ footer .contact-info ul li .icon i::before{
+     color:#2285d9;
+}
+ footer .contact-info ul li .detail .content {
+     color:#2285d9;
+}
+ footer .bottom {
+     background-color:#2285d9;
+}
+ section#member .meeting_icon::before{
+     border-color: transparent #2285d9;
+}
+ section#member .meeting_icon {
+     background: #2285d9;
+}
+ .separator ul li{
+     background:#2285d9;
+}
+ .section_heading h1 span, .section_heading h2 span{
+     color:#2285d9;
+}
+ section#services .item:hover .service_icon {
+     -ms-transform: scale(1.15);
+    /* IE 9 */
+     -webkit-transform: scale(1.15);
+    /* Safari 3-8 */
+     transform: scale(1.15);
+     -webkit-box-shadow: 0px 10px 32px -14px rgba(173,173,173,1);
+     -moz-box-shadow: 0px 10px 32px -14px rgba(173,173,173,1);
+     box-shadow: 0px 10px 32px -14px rgba(173,173,173,1);
+}
+ section#quick-connect .newsletter{
+     background:url('../img/newsletter-icon.png') no-repeat center center, #2285d9;
+}
+ section#quick-connect .quick-info .content .sub-heading{
+     color: #2285d9;
+}
+ section#pricing .ultimate .features ul li{
+     border-bottom: solid 1px #1868ac;
+}
+ footer.index-3 .section_heading span{
+     color: #2285d9;
+}
+ footer.index-3 .latest-news .post-item .post-content .post-status {
+     color: #2285d9;
+}
+ footer.index-3 .contact-info .icon i::before{
+     color: #2285d9;
+}
+ footer.index-3 a.view_more:hover {
+     background: #2285d9;
+     border-color:#2285d9;
+}
+ .slider.index-3 .caption a.view_more{
+     background-color: #2285d9;
+     border:solid 1px #2285d9;
+}
+ .slider.index-3 .caption a.contact_us:hover{
+     color:#fff;
+     background-color: #2285d9;
+     border-color:#2285d9;
+}
+ section#pricing .ultimate .purchase a.purchase_now, section#pricing .ultimate .purchase a:hover.purchase_now{
+     color: #2285d9;
+}
+ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inner::after {
+     background-color: #2285d9;
+}
+ .slider.index-3 .carousel-control-next-icon:hover, .slider.index-3 .carousel-control-prev-icon:hover {
+     border:solid 1px #2285d9;
+}
+ section#blog_post.index-3 .post-detail .description a.view_more:hover {
+     background-color:#2285d9;
+     border-color:#2285d9;
+}
+ section#services.index-3 .service_icon {
+     background:#2285d9;
+     border:solid 1px #2285d9;
+}
+ 

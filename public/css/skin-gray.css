@@ -1,0 +1,272 @@
+ 
+/*-------------------------------------- Green color css #595959 ----------------------------------------*/
+ h1 span{
+     color:#595959;
+}
+ a.view_more:hover{
+     background: #595959;
+}
+ form .form-group button[type="submit"]{
+     background: #595959;
+}
+ .navbar-nav .nav-item.active a{
+     color:#595959;
+}
+ .navbar-nav .nav-item.active a.dropdown-toggle::after{
+     color:#595959;
+}
+ .header-transparent .nav-item.dropdown.active a{
+     color:#595959;
+}
+ .dropdown-item a:hover{
+     background-color: #595959;
+     color:#fff;
+}
+ .navbar-toggler-icon {
+     display: block;
+     width:25px;
+     height:2px;
+     vertical-align: middle;
+     background-color: #595959;
+     margin: 5px 0;
+}
+ #slider .tp-caption.heading span{
+     color:#595959;
+}
+ .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+     background:#595959;
+}
+ section#portfolio .sort-btn.active, section#portfolio .sort-btn:hover {
+     background:#595959;
+}
+ section#testimonials .testimonials-slider .item .client_detail .name_designation h5{
+     color:#595959;
+}
+ .owl-carousel .owl-nav .owl-next::before {
+     color:#595959;
+}
+ .owl-carousel .owl-nav .owl-prev::before {
+     color:#595959;
+}
+ .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-next:hover{
+     background:#595959 !important;
+     border-color:#595959;
+     -webkit-box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+     -moz-box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+     box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+}
+ .section_heading h2 span{
+     color:#595959;
+}
+ .separator ul li{
+     background:#595959;
+}
+ .separator.left-align ul li{
+     background:#595959;
+}
+ .pagination .page-item.active .page-link, .pagination .page-link:hover{
+     background:#595959 !important;
+     border-color:#595959;
+     -webkit-box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+     -moz-box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+     box-shadow: 0px 8px 21px -6px rgba(82,158,25,1);
+}
+ .post-detail .post-status ul li i{
+     color: #595959;
+}
+ .post-detail .post-status ul li i::before{
+     color: #595959;
+}
+ .post-detail .description a{
+     color: #595959;
+}
+ .sidebar .widget .widget-content .post-item .post-content .post-status i::before {
+     color: #595959;
+}
+ .sidebar .widget .widget-content .tags ul li a:hover{
+     border: solid 1px #595959;
+     background:#595959;
+}
+ .chat-id p span{
+     font-size: 30px;
+     color:#595959;
+}
+ .service-card.item .service_icon i::before{
+     color: #595959;
+}
+ .service-card.item:hover{
+     border:solid 1px #595959;
+     background:#595959 !important;
+     -webkit-box-shadow: 0px 15px 32px -14px rgba(83,158,25,1);
+     -moz-box-shadow: 0px 15px 32px -14px rgba(83,158,25,1);
+     box-shadow: 0px 15px 32px -14px rgba(83,158,25,1);
+}
+ .team-card.item .name_designation h5 a{
+     display: block;
+     color:#595959;
+     font-weight: 500;
+}
+ .project .label-bg {
+     background: #595959;
+}
+ .blog_card .post-detail .posted_by a{
+     color:#595959;
+     font-weight:bold;
+}
+ footer .footer_about_content a{
+     color: #595959;
+}
+ footer .contact_info i{
+     color:#595959;
+}
+ footer .newsletter h4{
+     color:#595959;
+}
+ footer .newsletter form button[type="submit"]{
+     background:#595959;
+}
+ footer .copyright a:hover{
+     color: #595959;
+}
+ section#inner-banner .inner-heading .breadcrumb li.breadcrumb-item a {
+     color: #595959;
+}
+ section#qualities .column .icon i::before{
+     color: #595959;
+}
+ section#about-detail .section_heading h4 span{
+     color: #595959;
+}
+ section#pricing .price_amount strong{
+     color: #595959;
+}
+ section#pricing .purchase a.purchase_now:hover{
+     background: #595959;
+     color: #fff;
+}
+ section#pricing .ultimate{
+     background: #595959 !important;
+     -webkit-box-shadow: 0px 5px 32px -7px rgba(82,158,25,0.78);
+     -moz-box-shadow: 0px 5px 32px -7px rgba(82,158,25,0.78);
+     box-shadow: 0px 5px 32px -7px rgba(82,158,25,0.78);
+}
+ section#pricing .ultimate .purchase a.purchase_now, section#pricing .ultimate .purchase a:hover.purchase_now{
+     color: #595959;
+}
+ section#portfolio_detail .about_project i::before{
+     font-size: 40px;
+     color:#595959;
+}
+ section#member .meeting_content a{
+     color:#595959;
+}
+ section#team_member_detail .name_designation h3{
+     color:#595959;
+}
+ section#team_member_detail .name_designation h6{
+     color:#262626;
+}
+ section#team_member_detail .social_media ul li a:hover{
+     color:#595959;
+}
+ section#team_member_detail .contact-detail li i::before{
+     color:#595959;
+}
+ .blog_card .post-detail h6 a:hover, .blog_card .post-detail h4 a:hover, .blog_card .post-detail h5 a:hover{
+     color:#595959 !important;
+}
+ section#member .overlay, section#services-counter .overlay, section#counter .overlay{
+     width:100%;
+     height:100%;
+     background: rgb(89, 89, 89, 0.8);
+     display:block;
+     position:absolute;
+     z-index:0;
+     top:0;
+}
+ section#team_member_detail .counter-column .counter_content .title{
+     color: #595959;
+}
+ section#blog-post-list .post-detail .post-status ul li i{
+     color: #595959;
+}
+ section#blog-post-list .post-detail .post-status ul li i::before{
+     color: #595959;
+}
+
+
+section#blog-post-list .post-detail .description a:hover, section#blog-with-sidebar .post-detail .description a:hover{
+     color: #595959;
+     border-bottom:solid 1px #595959;
+}
+
+ section#single-post-detail .blog-detail .post-detail .about-post .special-quote{
+     background:#f0ffe9;
+     border:solid 1px #def8d2;
+}
+ section#single-post-detail .tags_share .tags ul li a:hover{
+     border: solid 1px #595959;
+     background:#595959;
+}
+ section#single-post-detail .tags_share .share_on .icons a i:hover::before{
+     color:#595959;
+}
+ section#single-post-detail .author_sec .about-author .name_designation h6{
+     color:#595959;
+}
+ section#single-post-detail .author_sec .about-author .social_media ul li a:hover{
+     color:#595959;
+}
+ section#single-post-detail .comments h5 span{
+     color: #595959;
+}
+ section#single-post-detail .comments ol li .visitor_description .date {
+     color:#595959;
+}
+ section#single-post-detail .comments ol li .visitor_description a{
+     color:#595959;
+     font-weight:600;
+}
+ .project .zoom{
+     background: rgba(82, 158, 25, 0.9);
+}
+ .blog_card .post-img .posted_on {
+     background: rgb(26, 26, 26, 0.9);
+}
+ section#single-post-detail .sidebar .widget .widget-content .post-item .post-content .post-status i::before {
+     color: #595959;
+}
+ section#contact-us .contact-detail .contact-card .icon i::before{
+     color: #595959;
+}
+ section#contact-us .mid-content .description span{
+     color: #595959;
+}
+ section#contact-us .info ul li .icon i:before{
+     color:#595959;
+}
+ section#contact-us .form-header{
+     background:#595959;
+}
+ section#faq #accordion button.btn-link span{
+     color:#595959;
+}
+ section#page-not-found .error-content h4 {
+     color:#595959;
+}
+ section#page-not-found .error-content a{
+     background: #595959;
+}
+ header .navbar .main-nav ul li.sub-dropdown.active a.caret::after, header .navbar .main-nav ul li.megamenu.active a.caret::after{
+     color:#595959;
+}
+ section#pricing .ultimate .features ul li{
+     border-bottom: solid 1px #71d328;
+}
+ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inner::after {
+     background-color:#595959;
+}
+ section#blog_post .post-detail .description a.view_more:hover {
+     background-color:#595959;
+     border-color:#595959;
+}

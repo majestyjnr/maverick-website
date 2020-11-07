@@ -1,0 +1,32 @@
+{
+  "name": "maverick-edifice-official-website",
+  "version": "1.0.0",
+  "description": "This is the official website of Maverick Edifice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "Website",
+    "Maverick",
+    "Technology"
+  ],
+  "author": "Developer Majesty",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.9",
+    "nodemailer": "^6.4.14",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

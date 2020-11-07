@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>Maverick Edifice - Admin Login</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favi.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!-- IZITOAST Libraries -->
+	<link rel="stylesheet" href="../css/izitoast/css/iziToast.min.css">
+</head>
+
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper login-body">
+		<div class="login-wrapper">
+			<div class="container">
+				<div class="loginbox">
+					<div class="login-left">
+						<img class="img-fluid" src="../assets/img/logo-white.png" alt="Logo">
+					</div>
+					<div class="login-right">
+						<div class="login-right-wrap">
+							<h1>Admin Login</h1>
+							<hr>
+							<p class="account-subtitle">Login to start a session</p>
+
+							<!-- Form -->
+							<form action="/maverick-admin/login" method="POST">
+								<div class="form-group">
+									<input class="form-control" name="email" type="text" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input class="form-control" name="password" type="password" placeholder="Password">
+								</div>
+								<div class="form-group">
+									<button class="btn btn-block" style="background-color: #595959; color: white;"
+										type="submit">Login</button>
+								</div>
+							</form>
+							<!-- /Form -->
+
+							<div class="text-center forgotpass"><a href="forgot-password.html">Forgot Password?</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Main Wrapper -->
+
+	<!-- jQuery -->
+	<script src="../assets/js/jquery-3.2.1.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="../assets/js/script.js"></script>
+	<!-- IZITOAST -->
+	<script src="../css/izitoast/js/iziToast.min.js"></script>
+
+	<% if( error != '') { %>
+	<script>
+		var notify = new Audio("../sounds/notify.mp3");
+		notify.play();
+		iziToast.error({ title: 'Error!', message: `<%= error %>`, position: 'topLeft' })
+	</script>
+	<% } %>
+	<% if(error_msg != '') { %>
+	<script>
+		var notify = new Audio("../sounds/notify.mp3");
+		notify.play();
+		iziToast.info({ title: 'Info!', message: `<%= error_msg %>`, position: 'topLeft' })
+	</script>
+	<% } %>
+	<% if(typeof errors != 'undefined') { %>
+	<%  errors.forEach(function(error) { %>
+	<script>
+		var notify = new Audio("../sounds/notify.mp3");
+		notify.play();
+		iziToast.error({ title: 'Error Encountered!', message: `<%= error.msg %>`, position: 'topRight' })
+	</script>
+	<%     }); %>
+	<% } %>
+
+	<% if(success_msg != '') { %>
+	<script>
+		var notify = new Audio("../sounds/notify.mp3");
+		notify.play();
+		iziToast.success({ title: 'Success!', message: `<%= success_msg %>`, position: 'topRight' })
+	</script>
+	<% } %>
+</body>
+
+</html>

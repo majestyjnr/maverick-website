@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Maverick Edifice - Podcast</title>
+    <meta name="Company name" content="Maverick Edifice">
+    <meta name="author" content="His Royal Majesty">
+
+    <!-- description -->
+    <meta name="description" content="Maverick Edifice Official Website">
+    <!-- keywords -->
+    <meta name="keywords"
+        content="Business , Maverick Edifice, Maverick, Technology, Information Technology, IT, Software Development">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favi.png" />
+    <!-- Aminate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Owl Carousel stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <!-- Skin Green Css -->
+    <link rel="stylesheet" href="css/skin-gray.css" />
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- IZITOAST Libraries -->
+    <link rel="stylesheet" href="css/izitoast/css/iziToast.min.css">
+    <!-- jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!-- REVOLUTION CSS -->
+    <link rel="stylesheet" href="css/settings.css" />
+    <!-- REVOLUTION JS FILES -->
+    <script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="js/revolution/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution/revolution.extension.slideanims.min.js"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <!-- ====== Header Starts ====== -->
+        <header class="header">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg">
+
+                    <!-- Brand -->
+                    <h2 class="nav-brand">
+                        <a class="navbar-brand" href="/" title="Maverick Edifice"><img width="200px" src="img/logo.png"
+                                alt="Maverick Edifice" /></a>
+                    </h2>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+                        aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links -->
+                    <div class="main-menu collapse navbar-collapse" id="nav-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="/blog" title="Blog">Blog</a></li>
+                                    <li class="dropdown-item"><a href="/podcast" title="Podcast">Podcast</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <!-- ====== Header End ====== -->
+
+
+        <!-- ====== Banner Start ====== -->
+        <section id="inner-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-heading">
+                        <h2>Podcast Detail</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/blog">Podcast</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Podcast Detail</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== Banner End ====== -->
+
+        <!-- ====== Blog Posts Start ====== -->
+        <section id="single-post-detail">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="row">
+                        <% if(podcast){ %>
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 blog-detail">
+                            <div class="post-img"> <img src="assets/podcast/images/<%= podcast.podcastImage %>"
+                                    alt="Post" /></div>
+                            <div class="post-detail">
+
+                               
+                                <div class="about-post">
+                                    <h4><%= podcast.podcastTitle %></h4>
+                                    <div class="post-status">
+                                        <ul>
+                                            <li><i class="flat flaticon-folder"></i> <span><a
+                                                        href="javascript:void(0)"><%= podcast.postedBy %></a></span>
+                                            </li>
+                                            <li><i class="flat flaticon-chat"></i> <span>20</span></li>
+                                            <li><i class="flat flaticon-calendar"></i>
+                                                <span><%= podcast.timeUploaded.substring(14, 30) %></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="description">
+                                        <p><%- podcast.podcastDescription %></p>
+                                        <div class="special-quote">
+                                            <audio src="assets/podcast/files/<%= podcast.podcastFile %>"
+                                                style="width: 100%;" controls></audio><br>
+                                            <p>Author: <span style="color: black;"> <%= podcast.podcastAuthor %></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tags_share">
+                                    <div class="tags">
+                                        <div class="title">Tags</div>
+                                        <ul>
+                                            <% podcast.podcastTags.forEach(function(tag){ %>
+                                            <li><a href="javascript:void(0)" title="Bootstrap"><%= tag %></a></li>
+                                            <% }) %>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="share_on">
+                                        <div class="title">Share On :</div>
+                                        <div class="icons"> <a href="javascript:void(0)"><i
+                                                    class="flat flaticon-facebook-logo"></i></a> <a
+                                                href="javascript:void(0)"><i class="flat flaticon-twitter"></i></a> <a
+                                                href="javascript:void(0)"><i
+                                                    class="flat flaticon-google-plus-logo"></i></a> <a
+                                                href="javascript:void(0)"><i
+                                                    class="flat flaticon-linkedin-logo"></i></a> <a
+                                                href="javascript:void(0)"><i class="flat flaticon-instagram"></i></a>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <% } %>
+
+                            </div>
+                            <div class="author_sec">
+                                <div class="author-pic"> <img src="assets/team/admin/<%= admin.adminImage %>"
+                                        alt="Author" /> </div>
+                                <div class="about-author">
+                                    <div class="name_designation">
+                                        <p>Posted By: </p><h6><%= admin.adminName %></h6>
+                                    </div>
+                                    <!-- <div class="social_media">
+                                        <ul>
+                                            <li><a href="javascript:void(0)" title="Facebook"><i
+                                                        class="flat flaticon-facebook-logo"></i></a></li>
+                                            <li><a href="javascript:void(0)" title="Twitter"><i
+                                                        class="flat flaticon-twitter"></i></a></li>
+                                            <li><a href="javascript:void(0)" title="Google"><i
+                                                        class="flat flaticon-google-plus-logo"></i></a></li>
+                                        </ul>
+                                    </div> -->
+                                    <div class="clearfix"></div>
+                                    <div class="description">
+                                        <p><%= admin.adminBio %></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="reply_form">
+                                <h5>Leave a Reply</h5>
+                                <div class="separator left-align ">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-sm-4 col-xs-12 form-group">
+                                            <input type="text" placeholder="Full Name" />
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-sm-4 col-xs-12 form-group">
+                                            <input type="text" placeholder="Email" />
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-sm-4 col-xs-12 form-group">
+                                            <input type="text" placeholder="Website URL" />
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-sm-12 col-xs-12 form-group">
+                                            <textarea placeholder="Write Your review"></textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-sm-5 col-xs-12 form-group mar-none">
+                                            <button type="submit">Send Message <i
+                                                    class="flat flaticon-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <aside class="col-lg-3 col-md-12 col-sm-12 col-xs-12 sidebar right">
+                            <div class="widget" style="padding: 10px;">
+                                <div class="sidebar_heading">
+                                    <h5>Search</h5>
+                                    <div class="separator left-align ">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-content">
+                                    <div class="search">
+                                        <form action="https://wpshopmart.com/index.html">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Search Podcasts..." />
+                                                <button type="submit"> <i class="flat flaticon-search"></i> </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget" style="padding: 10px;">
+                                <div class="sidebar_heading">
+                                    <h5>Recent Podcasts</h5>
+                                    <div class="separator left-align ">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-content">
+                                    <% allPodcasts = allPodcasts.reverse() %>
+                                    <% allPodcasts.forEach(function(eachPodcast){ %>
+                                    <div class="post-item">
+                                        <div class="post-img"> <img
+                                                src="assets/podcast/images/<%= eachPodcast.podcastImage %>"
+                                                alt="post" />
+                                        </div>
+                                        <div class="post-content">
+                                            <a href="/podcast-detail?id=<%= eachPodcast._id %>"><%= eachPodcast.podcastTitle %>
+                                            </a>
+                                            <div class="post-status"> <i class="flat flaticon-calendar"></i>
+                                                <span><%= eachPodcast.timeUploaded.substring(14, 30) %></span> </div>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+                                </div>
+                            </div>
+
+                            <div class="widget" style="padding: 10px;">
+                                <div class="sidebar_heading">
+                                    <h5>Quick Connect</h5>
+                                    <div class="separator left-align ">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="widget-content">
+                                    <div class="quick-connect-form">
+                                        <form onsubmit="return sendMessage(this)" method="POST">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Full Name" name="fullname" id="fullname"
+                                                    required />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Email" name="email" id="email"
+                                                    required />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Phone No." name="phone" id="phone"
+                                                    required />
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Subject" name="subject" id="subject"
+                                                    required />
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea placeholder="Message" id="message" name="message"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit">Send Message <i
+                                                        class="flat flaticon-plane"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <script>
+                                        function sendMessage(form) {
+                                            var formData = { fullname: form.fullname.value, email: form.email.value, phone: form.phone.value, subject: form.subject.value, message: form.message.value }
+                                            console.log(formData)
+                                            $.ajax({
+                                                url: '/send-message',
+                                                method: 'POST',
+                                                data: formData,
+                                                success: function (response) {
+                                                    formData._id = response._id
+
+                                                    document.getElementById("fullname").value = "";
+                                                    document.getElementById("email").value = "";
+                                                    document.getElementById("phone").value = "";
+                                                    document.getElementById("subject").value = "";
+                                                    document.getElementById("message").value = "";
+                                                    var notify = new Audio("sounds/notify.mp3");
+                                                    notify.play();
+                                                    iziToast.success({ title: 'Success!', message: response.text, position: 'topRight' })
+                                                }
+                                            });
+                                            return false;
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== Blog Posts End ====== -->
+    </div>
+
+    <!-- ====== Footer Start ====== -->
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 column">
+                        <div class="footer_about_content">
+                            <div class="footer_logo"><a href="/" title="Maverick Edifice"><img
+                                        src="img/logo.png" alt="Maverick Edifice" /></a> </div>
+                            <p> Collaborate with Maverick Edifice to share your dreams with a trusted
+                                partner, who is willing to help you achieve them. we will be thrilled to give you the
+                                best experience ever! That's our promise.</p>
+                            <p>Do Business With Us
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
+                        <h5>Navigation</h5>
+                        <div class="navigations">
+                            <ul>
+                                <li><a href="/" title="Home"> Home</a></li>
+                                <li><a href="/blog" title="Blog"> Blog</a></li>
+                                <li><a href="/podcast" title="Blog"> Podcast</a></li>
+                                <li><a href="/products" title="Products"> Products</a></li>
+                                <li><a href="/services" title="Services"> Services</a></li>
+                                <li><a href="/contact-us" title="Contact Us"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 column">
+                        <h5>Useful Links</h5>
+                        <div class="navigations">
+                            <ul>
+                                <li><a href="/our-team" title="Out Team"> Our Team</a></li>
+                                <li><a href="/careers" title="Careers"> Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 column">
+                        <h5>Contact Info</h5>
+                        <div class="contact_info">
+                            <ul>
+                                <li> <i class="flat flaticon-facebook-placeholder-for-locate-places-on-maps"></i>Accra,
+                                    Ghana </li>
+                                <li> <i class="flat flaticon-phone-receiver"></i>+233 55 968 7893, +233 55 337 1974</li>
+                                <li> <i class="flat flaticon-mail-black-envelope-symbol"></i>info@maverickedifice.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="newsletter">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>Our Newsletter</h4>
+                        </div>
+                        <div class="col-md-9">
+                            <form onsubmit="return subscribe(this)" method="POST">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" id="name" name="name" placeholder="Name" required/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="email" id="email" name="email" placeholder="Email" required/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="Submit">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            function subscribe(form) {
+                                var formData = { name: form.name.value, email: form.email.value }
+                                $.ajax({
+                                    url: '/subscribe',
+                                    method: 'POST',
+                                    data: formData,
+                                    success: function (response) {
+                                        document.getElementById('name').value = "";
+                                        document.getElementById('email').value = "";
+                                        var notify = new Audio("sounds/notify.mp3");
+                                        notify.play();
+                                        iziToast.success({ title: 'Success!', message: response.text, position: 'bottomRight' })
+                                    }
+
+                                });
+                                return false;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> Copyright &copy;
+                        <script> document.write(new Date().getFullYear());</script>
+                        <span class="separator-pipesign"></span>
+                        All Rights Reserved
+                        <span class="separator-pipesign"></span>
+                        <a href="/">Maverick Edifice</a></div>
+                    <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="/policy/privacy">Privacy
+                            Policy</a>
+                        <span class="separator-pipesign"></span>
+                        <a href="/policy/terms">Terms &amp; Conditions</a>
+                        <span class="separator-pipesign"></span>
+                        <a href="/faq">FAQ's</a> </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- popper js-->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints js plugin -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Counter-up js plugin -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- Lightbox-->
+    <script src="js/lightbox.js"></script>
+    <!--imageloaded js plugin -->
+    <script src="js/imagesloaded.js"></script>
+    <!-- isotope js -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Owl Slider js-->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.custom.js"></script>
+    <!-- parallax js-->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- Header menu -->
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <!-- Custome js-->
+    <script src="js/custom.js"></script>
+    <!-- IZITOAST -->
+    <script src="css/izitoast/js/iziToast.min.js"></script>
+</body>
+
+</html>
