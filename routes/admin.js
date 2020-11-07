@@ -1286,7 +1286,7 @@ router.post(
       });
 
       const output = `
-      <p>Hi Pal👻,</p>
+      <p>Hi,</p>
       ${req.body.news}
       <br>
     `;
@@ -1322,8 +1322,6 @@ router.post(
             admin_id: req.user._id,
           });
         }
-        console.log("Message sent: %s", info.messageId);
-        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
         res.render("admin/dashboard/subscription/broadcast-newsletters", {
           success_msg: "Message broadcasted to all subscribers successfully",
