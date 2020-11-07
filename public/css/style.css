@@ -1219,6 +1219,14 @@
      margin:0;
      width: 100%;
 }
+footer .newsletter form input[type="email"]{
+    border:solid 1px #e6e6e6;
+    padding:15px;
+    color:#262626;
+    font-size:14px;
+    margin:0;
+    width: 100%;
+}
  footer .newsletter form button[type="submit"]{
      border:none;
      padding: 15px 0;
