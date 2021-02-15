@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="widget-content">
-                                    <% if(podcast){ %>
+                                    <% if(podcast != ''){ %>
                                     <% podcast = podcast.reverse() %>
                                     <% podcast.forEach(function(eachPodcast){ %>
                                     <div class="post-item">
@@ -213,6 +213,10 @@
                                         </div>
                                     </div>
                                     <% }) %>
+                                    <% } else { %>
+                                        <div class="card p-2">
+                                            <center><h5>No Data Posted</h5></center>
+                                        </div>
                                     <% } %>
                                 </div>
                             </div>
