@@ -72,10 +72,9 @@ router.get("/podcast", function (req, res) {
   });
 });
 
-router.post("/search", function (req, res) {
+router.get("/s", function (req, res) {
   if (req.query.search) {
     const regex = new RegExp(escapeRegex(req.query.search), "gi");
-
     Podcast.find({ podcastTitle: regex }, function (err, podcastsFound) {
       if (err) {
         
@@ -270,5 +269,9 @@ router.get("/policy/terms", function (req, res) {
 router.get("/faq", function (req, res) {
   res.render("footer/faq");
 });
+
+function escapeRegex(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+}
 
 module.exports = router;
