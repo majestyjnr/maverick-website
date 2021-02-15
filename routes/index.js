@@ -72,6 +72,37 @@ router.get("/podcast", function (req, res) {
   });
 });
 
+router.post("/search", function (req, res) {
+  if (req.query.search) {
+    const regex = new RegExp(escapeRegex(req.query.search), "gi");
+
+    Podcast.find({ podcastTitle: regex }, function (err, podcastsFound) {
+      if (err) {
+        
+      } else {
+        Podcast.find(function (err, allPodcasts) {
+          res.render("top-navigations/resources/search", {
+            podcast: allPodcasts,
+            searched: podcastsFound
+          });
+        });
+
+        // Movies.find(function (err, movies) {
+        //   movies = movies.reverse();
+        //   res.render("account/search-results", {
+        //     fullname: req.user.fullname,
+        //     email: req.user.email,
+        //     profilepicture: req.user.profilepicture,
+        //     subscription: req.user.subscriptiontype,
+        //     searched: moviesFound, // Search Results
+        //     ID: req.user.id,
+        //   });
+        // });
+      }
+    });
+  }
+});
+
 router.get("/podcast-detail", function (req, res) {
   try {
     Podcast.findOne({ _id: req.query.id }, function (err, detail) {

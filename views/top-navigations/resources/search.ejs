@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Maverick Edifice - Our Podcasts</title>
+    <title>Maverick Edifice - Search Results</title>
     <meta name="Company name" content="Maverick Edifice">
     <meta name="author" content="His Royal Majesty">
 
@@ -101,11 +101,11 @@
             <div class="container">
                 <div class="row">
                     <div class="inner-heading">
-                        <h2>Our Podcasts</h2>
+                        <h2>Search Results</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Our Podcasts</li>
+                                <li class="breadcrumb-item active" aria-current="page">Search Results</li>
                             </ol>
                         </nav>
                     </div>
@@ -121,9 +121,9 @@
                 <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="row">
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 posts">
-                            <% if(podcast != ''){ %>
-                            <% podcast = podcast.reverse() %>
-                            <% podcast.forEach(function(eachPodcast){ %>
+                            <% if(searched != ''){ %>
+                            <% searched = searched.reverse() %>
+                            <% searched.forEach(function(eachPodcast){ %>
                             <div class="item blog_card card_mr_bt d-flex">
                                 <div class="post-img"> <img src="assets/podcast/images/<%= eachPodcast.podcastImage %>"
                                         alt="Post" /> </div>
@@ -154,7 +154,7 @@
                             <% } else{ %>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card_mr_bt blog-iso-item">
                                     <div class="item blog_card">
-                                        <div class="post-img"> <img src="assets/blog/empty_data_set.png" alt="Post"/>
+                                        <div class="post-img"> <img src="assets/img/empty.png" alt="Post"/>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
@@ -177,7 +177,7 @@
                                     <div class="search">
                                         <form action="/search" method="POST">
                                             <div class="form-group">
-                                                <input type="text" name="search" placeholder="Search..." />
+                                                <input type="text" name='search' placeholder="Search..." />
                                                 <button type="submit"> <i class="flat flaticon-search"></i> </button>
                                             </div>
                                         </form>
