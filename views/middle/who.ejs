@@ -74,13 +74,20 @@
                     <div class="main-menu collapse navbar-collapse" id="nav-content">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                                <% if(blog != "" && podcast != ""){ %>
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                                <% }%>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item">
-                                        <a href="/blog" title="Blog">Blog</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="/podcast" title="Podcast">Podcast</a>
+                                    <% if(blog != ""){ %>
+                                        <li class="dropdown-item"><a href="/blog" title="Blog">Blog</a></li>
+                                   <%  } else { %>
+                                        
+                                   <% } %>
+                                   <% if(podcast != ""){ %>
+                                        <li class="dropdown-item"><a href="/podcast" title="Podcast">Podcast</a>
+                                    <% } else{ %>
+
+                                    <% } %>
                                     </li>
                                 </ul>
                             </li>

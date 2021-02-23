@@ -91,10 +91,20 @@
                     <div class="main-menu collapse navbar-collapse" id="nav-content">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                                <% if(blog != "" && podcast != ""){ %>
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                                <% }%>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="/blog" title="Blog">Blog</a></li>
-                                    <li class="dropdown-item"><a href="/podcast" title="Podcast">Podcast</a>
+                                    <% if(blog != ""){ %>
+                                        <li class="dropdown-item"><a href="/blog" title="Blog">Blog</a></li>
+                                   <%  } else { %>
+                                        
+                                   <% } %>
+                                   <% if(podcast != ""){ %>
+                                        <li class="dropdown-item"><a href="/podcast" title="Podcast">Podcast</a>
+                                    <% } else{ %>
+
+                                    <% } %>
                                     </li>
                                 </ul>
                             </li>
@@ -463,7 +473,8 @@
         </section>
 
         <!-- ====== Blog Start ====== -->
-        <!-- <section id="blog_post">
+        <% if(blog != ""){ %>
+        <section id="blog_post">
             <div class="container">
                 <div class="section_heading ">
                     <h2>Blog <span>Posts</span></h2>
@@ -479,35 +490,45 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 content_sec ">
                     <div class="blog-slider owl-four owl-carousel owl-theme">
                         <% if(blog){ %>
-                        <% blog.forEach(function(eachBlog){ %>
-                        <div class="item blog_card">
-                            <div class="post-img"> <img src="assets/blog/<%= eachBlog.blogImage %>" alt="Post"
-                                    style="height: 200px" />
-                                <div class="posted_on"> <span
-                                        class="date"><%= eachBlog.timePosted.substring(22, 25) %></span> <span
-                                        class="month"><%= eachBlog.timePosted.substring(18, 22) %></span>
+                            <% blog.forEach(function(eachBlog){ %>
+                                <div class="item blog_card">
+                                    <div class="post-img"> <img src="assets/blog/<%= eachBlog.blogImage %>" alt="Post"
+                                            style="height: 200px" />
+                                        <div class="posted_on"> <span class="date">
+                                                <%= eachBlog.timePosted.substring(22, 25) %>
+                                            </span> <span class="month">
+                                                <%= eachBlog.timePosted.substring(18, 22) %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="post-detail">
+                                        <div class="post-title">
+                                            <h5><a href="/blog-detail?id=<%= eachBlog._id %>">
+                                                    <%= eachBlog.blogTitle %>
+                                                </a></h5>
+                                        </div>
+                                        <div class="posted_by"> <i class="flat flaticon-avatar"></i> Posted By - <a
+                                                href="javascript:void(0)">
+                                                <%= eachBlog.postedBy.substring(0, 14) + '...' %>
+                                            </a>
+                                        </div>
+                                        <div class="about_post">
+                                            <p>
+                                                <%- eachBlog.blogText.substring(0, 100) + '...' %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
-                            </div>
-                            <div class="post-detail">
-                                <div class="post-title">
-                                    <h5><a href="/blog-detail?id=<%= eachBlog._id %>"><%= eachBlog.blogTitle %></a></h5>
-                                </div>
-                                <div class="posted_by"> <i class="flat flaticon-avatar"></i> Posted By - <a
-                                        href="javascript:void(0)"><%= eachBlog.postedBy.substring(0, 14) + '...' %></a>
-                                </div>
-                                <div class="about_post">
-                                    <p><%- eachBlog.blogText.substring(0, 100) + '...' %></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <% }) %>
-                        <% } %>
+                                <% }) %>
+                                    <% } %>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
-        </section> -->
+        </section>
+        <% } %>
+
         <!-- ====== Blog End ====== -->
     </div>
 
