@@ -101,18 +101,26 @@ router.get("/s", function (req, res) {
             });
           });
         });
+      }
+    });
+  }
+});
 
-        // Movies.find(function (err, movies) {
-        //   movies = movies.reverse();
-        //   res.render("account/search-results", {
-        //     fullname: req.user.fullname,
-        //     email: req.user.email,
-        //     profilepicture: req.user.profilepicture,
-        //     subscription: req.user.subscriptiontype,
-        //     searched: moviesFound, // Search Results
-        //     ID: req.user.id,
-        //   });
-        // });
+router.get("/sb", function (req, res) {
+  if (req.query.search) {
+    const regex = new RegExp(escapeRegex(req.query.search), "gi");
+    Blog.find({ blogTitle: regex }, function (err, blogFound) {
+      if (err) {
+      } else {
+        Blog.find(function (err, allPosts) {
+          Podcast.find(function (err, allPodcasts) {
+            res.render("top-navigations/resources/searchblog", {
+              podcast: allPodcasts,
+              blog: allPosts,
+              searched: blogFound,
+            });
+          });
+        });
       }
     });
   }
