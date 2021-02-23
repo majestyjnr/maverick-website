@@ -84,7 +84,7 @@
 }
  .wraper{
      min-height: 100%;
-     padding-bottom: 600px;
+     padding-bottom: 10px;
      overflow:hidden;
 }
  .wraper-v2-inner{
@@ -1135,9 +1135,9 @@
 }
 /*---- Footer ----*/
  footer{
-     padding:100px 0;
-     min-height: 600px;
-     margin-top: -600px;
+     padding:10px 0;
+     min-height: 10px;
+     margin-top: -150px;
      font-family: 'Poppins', sans-serif;
 }
  footer .column{
@@ -2807,7 +2807,7 @@ footer .newsletter form input[type="email"]{
 /*---- Footer ----*/
  footer.index-3{
      padding: 80px 0 0;
-     min-height: 600px;
+     min-height: 10px;
      margin-top: -600px;
      background:url(../img/footer-bg.jpg) no-repeat right top;
      background-size: cover 
@@ -3062,7 +3062,7 @@ footer .newsletter form input[type="email"]{
 }
  footer.inner.index-2 {
      padding:0;
-     min-height:140px;
+     min-height:10px;
      margin-top: -140px;
 }
  footer.inner.index-2 .bottom{
@@ -3083,7 +3083,7 @@ footer .newsletter form input[type="email"]{
 }
  footer.inner.index-3 {
      padding:0;
-     min-height:140px;
+     min-height:10px;
      margin-top: -140px;
 }
  footer.inner.index-3 .bottom{
@@ -3097,7 +3097,7 @@ footer .newsletter form input[type="email"]{
      position: relative;
      min-height: 250px;
      overflow: visible;
-     top:-100px;
+     top:-50px;
 }
  section#qualities.index-3 .content{
      border-radius:0;
@@ -3545,11 +3545,11 @@ footer .newsletter form input[type="email"]{
      padding:20px 0;
 }
  section#team_member_detail .contact-detail li{
-     font-size: 16px;
+     font-size: 14px;
      color:#797979;
      display: inline-block;
-     float: left;
-     margin-right: 34px;
+     float: right;
+     margin-right: 10px;
 }
  section#team_member_detail .contact-detail li:last-child{
      margin-right:0px;
@@ -3557,9 +3557,9 @@ footer .newsletter form input[type="email"]{
  section#team_member_detail .contact-detail li i {
      margin-right:10px;
 }
- section#team_member_detail .contact-detail li i::before{
+ /* section#team_member_detail .contact-detail li i::before{
      font-size:16px;
-}
+} */
  section#team_member_detail .work-status{
      margin-top:80px;
 }
